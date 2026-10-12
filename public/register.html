@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - College Help Desk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+    <a href="/" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Home
+    </a>
+
+    <div class="auth-container" style="padding: 60px 24px;">
+        <div class="card auth-card" style="max-width: 500px;">
+            <div class="auth-header">
+                <h1>Student Registration</h1>
+                <p>Create an account to access student services</p>
+            </div>
+            
+            <form id="register-form" class="auth-form">
+                <div id="error-message" class="text-error mb-4" style="display:none; text-align:center; font-size: 14px;"></div>
+                <div id="success-message" class="text-success mb-4" style="display:none; text-align:center; font-size: 14px;"></div>
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="collegeId">College ID</label>
+                    <input type="text" id="collegeId" class="form-control" placeholder="e.g. DEMO2026001" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">College Email</label>
+                    <input type="email" id="email" class="form-control" required autocomplete="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" minlength="8" required new-password>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" class="form-control" minlength="8" required new-password>
+                </div>
+                
+                <button type="submit" class="btn btn-primary mt-4">Register</button>
+            </form>
+
+            <div class="auth-footer">
+                Already have an account? <a href="/login.html">Log in here</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/register.js"></script>
+</body>
+</html>

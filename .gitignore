@@ -1,0 +1,21 @@
+# Environment variables
+.env
+
+# Database files
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp
+tmp/
